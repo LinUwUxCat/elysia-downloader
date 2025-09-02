@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Elysia Downloader
+Comment=Download Elysia Art from Danbooru
+Exec=ElysiaDownloader
+Icon=ely-downloader
+Terminal=false
+Categories=Graphics;Network;
+Keywords=elysia;honkai;image;download;danbooru;
