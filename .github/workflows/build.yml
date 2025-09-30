@@ -11,11 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Install dependencies (replace these with your actual libraries)
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -28,13 +26,11 @@ jobs:
             cmake \
             pkg-config
 
-      # Create build directory and build the project
       - name: Build project
         run: |
           chmod +x ./build.sh &&
           ./build.sh
 
-      # Upload binary as artifact
       - name: Upload binary
         uses: actions/upload-artifact@v4
         with:
